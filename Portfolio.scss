@@ -1,0 +1,464 @@
+
+//global
+
+body{
+    // background-color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+li{ 
+    list-style: none;
+}
+
+img:hover{
+    transition-duration: 0.15s;
+    transform-style: ease-in-out;
+    transform: scale(1.05);
+}
+
+//navigation and hero section
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 10px 30px;
+    height: 70px;
+
+    .list-items{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: grid;
+    font-size: 1.2em;
+    grid-template-columns: 100px 150px 150px 150px;
+    justify-content: center;
+    text-align: center;
+
+    }
+    a{
+        transition-property: all;
+        transition-duration: 0.2s;
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0.5px 0.5px rgb(15, 143, 143);
+        
+        // margin: 0px 10px;
+    }
+    a:hover{
+        color: rgb(199, 189, 189);
+        cursor: pointer;
+        font-size: 1.25em;
+    }
+}
+#main-header{
+
+    background: url(./Images/bg3.jpg) no-repeat center center/cover;
+
+    overflow: hidden;
+    height: 500px;
+    width: 100vw;
+    z-index: -2;
+    border-bottom: 3px solid rgb(84, 244, 250);
+
+}
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top:90px;
+    .mainpic{
+        margin: 0px 36px;
+        width: 200px;
+        height: 200px;
+        border: 3px solid rgb(0, 119, 128);
+        border-radius: 50px;
+    }
+    div{
+        text-transform: uppercase;
+        word-spacing: 5px;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        margin-left: 30px;
+    }
+    h3{
+        font-size: 1.8em;
+        font-weight: bold;
+        span{
+            font-size: 1.3em;
+            color:rgb(27, 228, 184);
+        }
+        color: cyan;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    h5{
+        font-size: 1.2em;
+        color:rgb(204, 226, 221);
+        margin-bottom: 7px;
+    }
+    p{
+
+        font-size: 1.2em;
+        color:rgb(204, 226, 221);
+    }
+
+}
+
+// section 1{ about }
+
+#about{
+    padding: 30px;
+    padding-bottom: 60px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    border-bottom: 2px solid cyan;
+    hr{
+        margin-top: 10px;
+        width: 600px;
+    }
+    h1{
+        margin-bottom: 45px;
+        font-size: 1.5em;
+        font-weight: 670;
+    }
+    .about-images{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 20px 70px;
+            border: 1px solid black;
+            border-radius: 100%;
+        }
+    }
+    h4{
+        margin: 30px 0px;
+    }
+
+    .hobbies{
+        display: flex;
+        justify-content: center;
+        div{
+            border: 1px solid cyan;
+            border-radius: 5px;
+            display: inline-block;
+            margin:0px 50px;
+            text-align: center;
+            h6{
+                font-weight: bold;
+                 margin: 5px;
+            }
+        }
+        img{
+            border: 2px solid black;
+            border-radius: 60%;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            }
+     }
+
+}
+
+// section 2 {education}
+
+#education{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 0.5px dotted sandybrown;
+    h1{
+       text-align: center;
+        margin: 30px;
+      font-size: 2em;
+    }
+    .eduprofile{
+        display: flex;
+        justify-content: center;
+
+    div{
+        font-size: 1.3em;
+        border:1px solid black;
+        border-radius: 5px;
+        margin: 10px 30px;
+    }
+    .box1{
+        padding: 15px;
+        background-color: plum;
+        color: black;
+    }
+    .box1:hover{
+        transform: scale(1.037);
+        transition-duration: 0.17s;
+    }
+    .box2{
+        padding: 15px;
+        background-color: sandybrown;
+        color: black;
+
+
+    }
+    .box2:hover{
+        transform: scale(1.037);
+        transition-duration: 0.17s;
+    }
+    .box3{
+        padding: 15px;
+        background-color: lightcyan ;
+        color: black;
+
+
+    }
+    .box3:hover{
+        transform: scale(1.037);
+        transition-duration: 0.17s;
+    }
+  }
+  h2{
+      text-align: center;
+      word-spacing: 5px ;
+      letter-spacing: 2px;
+    }
+}
+
+//seciton 3 { project section}
+
+.minisection{
+    margin: 20px 0px 0px 10px;
+    text-align: center;
+    font-size: 2.5em;
+    span{
+        color: cyan;
+    }
+    border-bottom: 2px solid cyan;
+}
+
+// section 4 { Contacts }
+
+#contact{
+    text-align: center;
+    background-color: rgb(32, 30, 30);
+    padding-bottom: 30px;
+    h1{
+        margin: 20px 0px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: black;
+        font-size: 2.3em;
+    }
+    .allcontact{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-address{
+        // margin-right: 190px;
+        padding-right: 40px;
+     
+    }
+    .contact-details{
+        // margin-left: 100px;
+        padding-left: 40px;
+
+    }
+    h5{
+        text-align: left;
+        a{transition-duration: 0.2s;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+        a:hover{
+            color:burlywood;
+            transform: scale(1);
+        }
+    }
+    //final Quote
+    .ending-quote{
+        text-align: center;
+        font-size: 1.9em;
+        font-weight: bold;
+        background-color: rgb(32, 30, 30);
+        color: rgb(32, 155, 143);
+        padding-bottom: 30px;
+    }
+}
+.footer-2{
+    padding: 10px;
+    border-bottom: 3px dashed red;
+    width: 80%;
+    margin: auto;
+    word-spacing: 4px;
+    color: rgb(253, 212, 136);
+    font-size: 1em;
+    font-weight: 600px;
+
+}
+
+footer{
+    margin: 10px 0px 30px 0px;
+    text-align: center;
+    text-transform:uppercase;
+    color: slategrey;
+    font-weight: 900;
+}
+
+// media queries
+
+@media only screen and (max-width:1150px){
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    // navigation bar
+    .navbar{
+        width:500px;
+        margin: auto;
+    }
+     
+    //hero section
+
+    .hero{
+        font-size: 0.8em;
+        box-sizing: border-box;
+        margin:auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    //about
+    #about{
+        .about-images{
+        .imges1 ,.imges3{
+            display: none;
+        }
+        .img2{
+            // border-radius: 20px;
+            img{
+             border:2px solid cyan;
+            border-radius: 20px;
+            padding: 20px;
+                
+            }
+        }
+        }
+        
+        .hobbies{
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 50%;
+            padding: 20px;
+            border:none;
+        }
+       }
+       
+    
+    }
+
+    //education
+    
+    #education{
+        width:100%;
+        border-bottom: 2px solid cyan;
+    }
+    .eduprofile{
+        flex-direction: column;
+    }
+    .minisection{
+        display:none;
+    }
+    //contact
+    #contact{
+        .allcontact{
+        flex-direction: column;
+        align-items: center;
+        }
+        h2{
+            text-align: left;
+        }
+        .ending-quote{
+           font-size: 1.1em;
+           margin: none;
+        }
+    }
+    .contact-details{
+        // width: 300px;
+        padding:none;
+        margin:0;
+        text-align: center;
+    }
+    .contact-address{
+        padding:none;
+        // width: 300px;
+        text-align: center;
+    }
+
+    //footer
+
+}
+@media only screen and (max-width:600px){
+    
+    hr{
+        display: none;
+    }
+    #main-header{
+        height: 350px;
+       .navbar ul li{
+           font-size: 0.6em;
+       }
+       .list-items{
+        grid-template-columns: 35px 35px 70px 35px;
+        grid-gap: 20px;
+        width: 200px;
+
+       }
+       .mainpic{
+           display: none;
+       }
+       .hero{
+           div{
+            margin:0;
+            // padding: 10px;
+           }
+           text-align: center;
+           span{
+               display: block;
+           }
+       }
+    }
+    #about{
+        .about-images{
+               .imges1{
+                display: inline;
+                border-radius: 20px;
+                img{
+                    border: 2px solid cyan;
+                    border-radius: 30px;
+                    padding: 20px 0px;
+                }
+               }
+               .img2,.imges3{
+                   display: none;
+               }
+        }
+    }
+    #education{
+        h2{
+            padding:10px;
+            font-size: 1em;
+        }
+    }
+}
